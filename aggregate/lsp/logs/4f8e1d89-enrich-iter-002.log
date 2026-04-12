@@ -1,0 +1,86 @@
+[2026-04-12T11:45:42Z] === ENRICH ITERATION 2 START | repo=oxigraph/oxigraph sha=4f8e1d89 ===
+[2026-04-12T11:45:42Z] [iter=2] PHASE START: enrich repo=oxigraph/oxigraph sha=4f8e1d89 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/4f8e1d89-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/4f8e1d890eee73062eaf809b779ed1b276aa11d4.nq.gz
+[2026-04-12T11:45:42Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-12T11:46:10Z] [iter=2] AST store loaded triples=3389885 load_secs=27 mem_mb=923 MB
+[2026-04-12T11:46:10Z] [iter=2] Step 2: Finding LSP targets mem_mb=923 MB
+[2026-04-12T11:46:20Z] [iter=2] LSP targets found call_sites=30225 imports=752 extends=1 implements=335 secs=10
+[2026-04-12T11:46:25Z] [iter=2] Loaded checkpoint partial graph triples=110089
+[2026-04-12T11:46:33Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=923 MB
+[2026-04-12T11:46:52Z] [iter=2] Position index built positions=227544 nodes_with_types=278997 secs=19 mem_mb=1130 MB
+[2026-04-12T11:46:52Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1130 MB already_completed_types=[] already_completed_files=44
+[2026-04-12T11:46:52Z] [iter=2] Resolving target type target_type=call_site count=30225
+[2026-04-12T11:47:40Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=0 resolved=0 errors=0 current=testsuite/src/sparql_evaluator.rs
+[2026-04-12T11:54:11Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=8.5 files_done=1 resolved=63 errors=320 current=lib/oxrdf/src/parser.rs
+[2026-04-12T11:57:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=11.4 files_done=2 resolved=125 errors=477 current=lib/oxigraph/src/storage/rocksdb.rs
+[2026-04-12T12:03:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.2 files_done=3 resolved=616 errors=845 current=lib/spareval/src/lib.rs
+[2026-04-12T12:07:07Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=21.4 files_done=4 resolved=703 errors=1021 current=lib/oxrdf/src/dataset.rs
+[2026-04-12T12:12:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=27.2 files_done=5 resolved=940 errors=1331 current=lib/oxigraph/src/storage/rocksdb_wrapper.rs
+[2026-04-12T12:15:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=29.9 files_done=6 resolved=1056 errors=1480 current=lib/spargebra/src/term.rs
+[2026-04-12T12:18:10Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=32.5 files_done=7 resolved=1135 errors=1619 current=lib/oxrdf/src/blank_node.rs
+[2026-04-12T12:19:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=33.6 files_done=8 resolved=1173 errors=1681 current=lib/oxsdatatypes/src/double.rs
+[2026-04-12T12:20:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=34.8 files_done=10 resolved=1217 errors=1742 current=lib/oxsdatatypes/src/float.rs
+[2026-04-12T12:27:15Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=41.5 files_done=12 resolved=1338 errors=2112 current=lib/oxrdf/src/vocab.rs
+[2026-04-12T12:28:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=42.9 files_done=13 resolved=1338 errors=2187 current=testsuite/src/manifest.rs
+[2026-04-12T12:29:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=44.1 files_done=14 resolved=1461 errors=2251 current=lib/oxrdf/src/interning.rs
+[2026-04-12T12:32:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=47.0 files_done=15 resolved=1478 errors=2407 current=lib/spargebra/src/query.rs
+[2026-04-12T12:33:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=48.1 files_done=16 resolved=1498 errors=2468 current=oxrocksdb-sys/build.rs
+[2026-04-12T12:36:00Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=50.3 files_done=17 resolved=1551 errors=2587 current=python/src/dataset.rs
+[2026-04-12T12:36:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=51.3 files_done=19 resolved=1591 errors=2639 current=lib/sparopt/src/optimizer.rs
+[2026-04-12T12:44:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=59.1 files_done=20 resolved=1614 errors=3063 current=testsuite/src/report.rs
+[2026-04-12T12:45:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=59.6 files_done=22 resolved=1677 errors=3090 current=lib/oxttl/src/toolkit/parser.rs
+[2026-04-12T12:47:22Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=61.7 files_done=24 resolved=1834 errors=3201 current=lib/oxjsonld/src/from_rdf.rs
+[2026-04-12T12:49:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=63.6 files_done=25 resolved=1930 errors=3307 current=lib/oxigraph/src/storage/error.rs
+[2026-04-12T12:52:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=67.1 files_done=27 resolved=2049 errors=3495 current=testsuite/src/canonicalization_evaluator.rs
+[2026-04-12T12:53:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=67.9 files_done=28 resolved=2067 errors=3540 current=python/src/store.rs
+[2026-04-12T12:55:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=70.2 files_done=29 resolved=2146 errors=3668 current=lib/oxigraph/src/storage/binary_encoder.rs
+[2026-04-12T13:01:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=75.4 files_done=30 resolved=2300 errors=3951 current=python/src/io.rs
+[2026-04-12T13:02:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=77.1 files_done=31 resolved=2391 errors=4044 current=lib/spareval/src/update.rs
+[2026-04-12T13:03:54Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=78.2 files_done=32 resolved=2410 errors=4102 current=js/src/store.rs
+[2026-04-12T13:06:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=81.2 files_done=33 resolved=2519 errors=4258 current=js/src/utils.rs
+[2026-04-12T13:07:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=81.7 files_done=35 resolved=2572 errors=4289 current=lib/oxttl/src/toolkit/lexer.rs
+[2026-04-12T13:07:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=82.3 files_done=36 resolved=2643 errors=4318 current=lib/sparesults/src/serializer.rs
+[2026-04-12T13:08:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=82.9 files_done=38 resolved=2662 errors=4350 current=lib/oxttl/src/nquads.rs
+[2026-04-12T13:09:11Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=83.5 files_done=39 resolved=2681 errors=4381 current=fuzz/fuzz_targets/trig.rs
+[2026-04-12T13:10:44Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=85.0 files_done=42 resolved=2738 errors=4463 current=lib/oxigraph/src/sparql/mod.rs
+[2026-04-12T13:11:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=85.6 files_done=43 resolved=2763 errors=4496 current=lib/oxrdfio/src/serializer.rs
+[2026-04-12T13:13:04Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=87.4 files_done=44 resolved=2772 errors=4589 current=lib/spargebra/src/update.rs
+[2026-04-12T13:14:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=88.7 files_done=45 resolved=2806 errors=4664 current=lib/oxsdatatypes/src/integer.rs
+[2026-04-12T13:15:38Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=89.9 files_done=46 resolved=2844 errors=4728 current=lib/sparesults/src/error.rs
+[2026-04-12T13:16:14Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=90.5 files_done=48 resolved=2856 errors=4761 current=testsuite/src/main.rs
+[2026-04-12T13:16:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=91.3 files_done=50 resolved=2873 errors=4801 current=testsuite/tests/oxigraph.rs
+[2026-04-12T13:17:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=92.0 files_done=54 resolved=2884 errors=4836 current=testsuite/benches/parser.rs
+[2026-04-12T13:19:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=93.4 files_done=55 resolved=2889 errors=4915 current=lib/spareval/src/error.rs
+[2026-04-12T13:19:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=94.3 files_done=57 resolved=2911 errors=4960 current=lib/oxigraph/src/sparql/error.rs
+[2026-04-12T13:20:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=95.0 files_done=59 resolved=2938 errors=5001 current=lib/oxttl/src/chunker.rs
+[2026-04-12T13:21:14Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=95.5 files_done=61 resolved=2950 errors=5029 current=lib/oxigraph/src/sparql/http.rs
+[2026-04-12T13:21:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=96.3 files_done=62 resolved=2994 errors=5069 current=lib/oxsdatatypes/src/boolean.rs
+[2026-04-12T13:22:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=97.1 files_done=67 resolved=3029 errors=5109 current=lib/oxrdfio/src/error.rs
+[2026-04-12T13:23:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=97.6 files_done=69 resolved=3047 errors=5141 current=testsuite/src/vocab.rs
+[2026-04-12T13:23:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=98.3 files_done=70 resolved=3047 errors=5175 current=lib/spargeo/src/lib.rs
+[2026-04-12T13:25:00Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=99.3 files_done=71 resolved=3055 errors=5229 current=lib/oxrdfxml/src/error.rs
+[2026-04-12T13:25:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=100.0 files_done=77 resolved=3081 errors=5266 current=lib/oxrdfxml/src/lib.rs
+[2026-04-12T13:28:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=102.7 files_done=99 resolved=3227 errors=5402 current=python/tests/test_model.py
+[2026-04-12T13:31:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=105.4 files_done=100 resolved=3287 errors=5547 current=lints/test_debian_compatibility.py
+[2026-04-12T13:31:38Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=105.9 files_done=101 resolved=3301 errors=5574 current=bench/explanation_to_trace.py
+[2026-04-12T13:35:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=109.3 files_done=103 resolved=3404 errors=5758 current=bench/bsbm-plot.py
+[2026-04-12T13:36:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=110.8 files_done=105 resolved=3461 errors=5838 current=python/tests/test_doc.py
+[2026-04-12T13:37:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=111.6 files_done=108 resolved=3495 errors=5877 current=python/docs/conf.py
+[2026-04-12T13:37:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=112.1 files_done=112 resolved=3512 errors=5906 current=js/test/io.test.ts
+[2026-04-12T13:39:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=113.5 files_done=113 resolved=3514 errors=5980 current=js/test/store.test.ts
+[2026-04-12T13:42:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=116.6 files_done=114 resolved=3514 errors=6149 current=js/test/model.test.ts
+[2026-04-12T13:42:55Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=117.2 files_done=115 resolved=3514 errors=6183 current=js/test/bench_data.ts
+[2026-04-12T13:43:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=117.7 files_done=119 resolved=3517 errors=6207 current=oxrocksdb-sys/api/c.cc
+[2026-04-12T13:43:32Z] [iter=2] Target type resolved target_type=call_site resolved=3517 errors=6212 secs=7001 mem_mb=1131 MB
+[2026-04-12T13:43:32Z] [iter=2] Resolving target type target_type=import_statement count=752
+[2026-04-12T13:44:08Z] [iter=2] HEARTBEAT target_type=import_statement elapsed_min=118.4 files_done=1 resolved=6 errors=0 current=testsuite/src/files.rs
+[2026-04-12T13:44:38Z] [iter=2] HEARTBEAT target_type=import_statement elapsed_min=118.9 files_done=71 resolved=285 errors=0 current=lib/oxjsonld/src/lib.rs
+[2026-04-12T13:44:54Z] [iter=2] Target type resolved target_type=import_statement resolved=410 errors=0 secs=81 mem_mb=1131 MB
+[2026-04-12T13:44:54Z] [iter=2] Resolving target type target_type=extends_clause count=1
+[2026-04-12T13:44:55Z] [iter=2] Target type resolved target_type=extends_clause resolved=1 errors=0 secs=1 mem_mb=1131 MB
+[2026-04-12T13:44:55Z] [iter=2] Resolving target type target_type=implements_clause count=335
+[2026-04-12T13:45:08Z] [iter=2] HEARTBEAT target_type=implements_clause elapsed_min=119.4 files_done=0 resolved=0 errors=0 current=lib/sparesults/src/parser.rs
+[2026-04-12T13:45:35Z] [iter=2] Target type resolved target_type=implements_clause resolved=117 errors=0 secs=40 mem_mb=1131 MB
+[2026-04-12T13:46:33Z] [iter=2] Step 5: Writing final enrichment file triples=238098
+[2026-04-12T13:46:38Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/4f8e1d890eee73062eaf809b779ed1b276aa11d4.nq.gz size_kb=5430
+[2026-04-12T13:46:38Z] [iter=2] Checkpoint cleared (enrichment complete)
+[2026-04-12T13:46:38Z] [iter=2] PHASE END: enrich elapsed_s=7256 elapsed_min=120.9 total_triples=238098
